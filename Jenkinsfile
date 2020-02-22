@@ -7,6 +7,7 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too" >> file1
                     ls -lah
+                    echo "$BRANCH_NAME"
                 '''
             }
         }
